@@ -28,7 +28,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img src="https://startbootstrap.com/assets/img/sb-logo.svg" alt="" width="55" height="auto">
                     </a>
 
@@ -53,7 +53,17 @@
                                 <a class="nav-link" aria-current="page" href="#">About Us</a>
                             </li>
                         </ul>
-                        <button class="btn signup-btn">Sign Up</button>
+                        <!-- Login-Button-Start -->
+                        <!-- <button class="btn signup-btn px-4">Sign Up</button> -->
+                        <!-- Login-Button-End-->
+                        <!-- User-Image-Start -->
+                        <div class="d-flex align-items-center">
+                            <a class="user-link-a" href="#">
+                                <img class="user-img" src="./assets/images/user.png" alt="">
+                                <span class="user-first-name">Shahriar</span>
+                            </a>
+                        </div>
+                        <!-- User-Image-End -->
                     </div>
                 </div>
             </nav>
@@ -62,10 +72,10 @@
     <!-- Navbar-End -->
 
     <!-- Hero-Section-Start -->
-    <section class="hero-section">
+    <section class="hero">
         <div class="container">
-            <div class="row mt-4">
-                <div class="col-12 col-lg-6 text-light">
+            <div class="row">
+                <div class="col-12 col-lg-6 text-light mt-4">
                     <h1>E-Health Care</h1>
                     <p class="hero-description">E-Health Care is a dream that turned into a tech based startup, a
                         business with a great
@@ -76,11 +86,86 @@
                         delivery for the general people in Bangladesh.
                     </p>
                 </div>
+                <div class="col-12">
+                    <div class="feture-bar mt-0 mt-md-5 mt-lg-4 mt-xxl-5">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-custom-white active" id="pills-search-doctor-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-search-doctor" type="button" role="tab"
+                                    aria-controls="pills-search-doctor" aria-selected="true">Search Doctor</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-custom-white" id="pills-search-hospital-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-search-hospital" type="button"
+                                    role="tab" aria-controls="pills-search-hospital" aria-selected="false">Search
+                                    Hospital</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-custom-white" id="pills-heart-checkup-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-heart-checkup" type="button" role="tab"
+                                    aria-controls="pills-heart-checkup" aria-selected="false">Heart Checkup</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-custom-white" id="pills-doctor-list-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-doctor-list" type="button" role="tab"
+                                    aria-controls="pills-doctor-list" aria-selected="false">Doctor List</button>
+                            </li>
+                            <li class="nav-item text-custom-white" role="presentation">
+                                <button class="nav-link text-custom-white" id="pills-hostipal-list-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-hostipal-list" type="button" role="tab"
+                                    aria-controls="pills-hostipal-list" aria-selected="false">Heart Checkup</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- Hero-Section-End -->
 
+    <!-- Main-Section-Start -->
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class=" col-12 xs-custom-mt">
+                    <!-- add a midea only for mobo  -->
+                    <div class="tab-content mt-5" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-search-doctor" role="tabpanel"
+                            aria-labelledby="pills-search-doctor-tab">
+                            <!-- content-1-start -->
+                            1
+                            <!-- content-1-end -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-search-hospital" role="tabpanel"
+                            aria-labelledby="pills-search-hospital-tab">
+                            <!-- content-2-start -->
+                            2
+                            <!-- content-2-end -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-heart-checkup" role="tabpanel"
+                            aria-labelledby="pills-heart-checkup-tab">
+                            <!-- content-3-start -->
+                            3
+                            <!-- content-3-end -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-doctor-list" role="tabpanel"
+                            aria-labelledby="pills-doctor-list-tab">
+                            <!-- content-4-start -->
+                            4
+                            <!-- content-4-end -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-hostipal-list" role="tabpanel"
+                            aria-labelledby="pills-hostipal-list-tab">
+                            <!-- content-5-start -->
+                            5
+                            <!-- content-5-end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main-Section-End -->
 
 
     <!-- Bootstrap Bundle with Popper -->
