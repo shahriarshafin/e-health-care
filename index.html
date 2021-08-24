@@ -105,15 +105,11 @@
                                     data-bs-toggle="pill" data-bs-target="#pills-heart-checkup" type="button" role="tab"
                                     aria-controls="pills-heart-checkup" aria-selected="false">Heart Checkup</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link text-custom-white" id="pills-doctor-list-tab"
-                                    data-bs-toggle="pill" data-bs-target="#pills-doctor-list" type="button" role="tab"
-                                    aria-controls="pills-doctor-list" aria-selected="false">Doctor List</button>
+                            <li class="nav-item">
+                                <a class="nav-link text-custom-white" href="#">Doctor List</a>
                             </li>
-                            <li class="nav-item text-custom-white" role="presentation">
-                                <button class="nav-link text-custom-white" id="pills-hostipal-list-tab"
-                                    data-bs-toggle="pill" data-bs-target="#pills-hostipal-list" type="button" role="tab"
-                                    aria-controls="pills-hostipal-list" aria-selected="false">Heart Checkup</button>
+                            <li class="nav-item">
+                                <a class="nav-link text-custom-white" href="#">Hospital list</a>
                             </li>
                         </ul>
                     </div>
@@ -124,22 +120,108 @@
     <!-- Hero-Section-End -->
 
     <!-- Main-Section-Start -->
-    <section class="main-content">
+    <section class="main-content bg-grey">
         <div class="container">
             <div class="row">
                 <div class=" col-12 xs-custom-mt">
-                    <!-- add a midea only for mobo  -->
                     <div class="tab-content mt-5" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-search-doctor" role="tabpanel"
                             aria-labelledby="pills-search-doctor-tab">
                             <!-- content-1-start -->
-                            1
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-appointment-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-appointment" type="button" role="tab"
+                                        aria-controls="pills-appointment" aria-selected="true">Appointments</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-disease-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-disease" type="button" role="tab"
+                                        aria-controls="pills-disease" aria-selected="false">According to
+                                        disease</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-appointment" role="tabpanel"
+                                    aria-labelledby="pills-appointment-tab">
+                                    <!-- doctor-appointment-start -->
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <h3 class="mb-5">Get appointments for doctor</h3>
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="setectCity" class="form-label">Select City</label>
+                                                    <input type="text" class="form-control" id="setectCity"
+                                                        placeholder="eg. dhaka">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="searchHere" class="form-label">Search Here</label>
+                                                    <input type="text" class="form-control" id="searchHere"
+                                                        placeholder="doctor name, speciality, etc">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <img class="img-fluid" width="90%" alt="" src="./assets/images/doctors.svg">
+                                        </div>
+                                    </div>
+                                    <!-- doctor-appointment-end -->
+                                </div>
+                                <div class="tab-pane fade" id="pills-disease" role="tabpanel"
+                                    aria-labelledby="pills-disease-tab">
+                                    <!-- deases-search-start -->
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <h3 class="mb-5">upcomming</h3>
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="setectCity" class="form-label">Select City</label>
+                                                    <input type="text" class="form-control" id="setectCity"
+                                                        placeholder="eg. dhaka">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="searchHere" class="form-label">Search Here</label>
+                                                    <input type="text" class="form-control" id="searchHere"
+                                                        placeholder="doctor name, speciality, etc">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <img class="img-fluid" width="90%" alt="" src="./assets/images/doctors.svg">
+                                        </div>
+                                    </div>
+                                    <!-- deases-search-end -->
+                                </div>
+                            </div>
                             <!-- content-1-end -->
                         </div>
                         <div class="tab-pane fade" id="pills-search-hospital" role="tabpanel"
                             aria-labelledby="pills-search-hospital-tab">
                             <!-- content-2-start -->
-                            2
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <h3 class="mb-5">Search Hospital</h3>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="setectCity" class="form-label">Select City</label>
+                                            <input type="text" class="form-control" id="setectCity"
+                                                placeholder="eg. dhaka">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="searchHere" class="form-label">Search Here</label>
+                                            <input type="text" class="form-control" id="searchHere"
+                                                placeholder="doctor name, speciality, etc">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <img class="img-fluid" width="90%" alt=""
+                                        src="./assets/images//Laboratory-amico.svg">
+                                </div>
+                            </div>
                             <!-- content-2-end -->
                         </div>
                         <div class="tab-pane fade" id="pills-heart-checkup" role="tabpanel"
@@ -148,25 +230,12 @@
                             3
                             <!-- content-3-end -->
                         </div>
-                        <div class="tab-pane fade" id="pills-doctor-list" role="tabpanel"
-                            aria-labelledby="pills-doctor-list-tab">
-                            <!-- content-4-start -->
-                            4
-                            <!-- content-4-end -->
-                        </div>
-                        <div class="tab-pane fade" id="pills-hostipal-list" role="tabpanel"
-                            aria-labelledby="pills-hostipal-list-tab">
-                            <!-- content-5-start -->
-                            5
-                            <!-- content-5-end -->
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Main-Section-End -->
-
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

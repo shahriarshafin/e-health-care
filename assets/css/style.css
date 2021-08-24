@@ -11,6 +11,9 @@ section {
 	background-color: #0076bc;
 	color: #fff;
 }
+.bg-grey {
+	background-color: #f7f7f7;
+}
 .text-custom-white {
 	color: rgba(238, 238, 238, 0.685);
 }
@@ -41,8 +44,14 @@ section {
 	width: 48px;
 	height: 48px;
 	border-radius: 50%;
-	border: 2px solid #00649e;
+	border: 2px solid #0080ca;
 	background-color: #00649e;
+	transition: all 0.5s;
+}
+.user-img:hover {
+	border: 2px solid #155d86;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+		rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .user-link-a {
 	text-decoration: none;
