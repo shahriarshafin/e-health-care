@@ -87,8 +87,8 @@ section {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-	color: black;
-	background-color: #fff;
+	color: white;
+	background-color: #ed4c4c;
 }
 
 .nav-link:focus,

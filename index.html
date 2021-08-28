@@ -29,7 +29,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
-                        <img src="https://startbootstrap.com/assets/img/sb-logo.svg" alt="" width="55" height="auto">
+                        <img src="./assets/images/logo.svg" alt="" width="75%" height="auto">
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -54,15 +54,15 @@
                             </li>
                         </ul>
                         <!-- Login-Button-Start -->
-                        <!-- <button class="btn signup-btn px-4">Sign Up</button> -->
+                        <a href="./login.html"><button class="btn signup-btn px-4">Sign Up</button></a>
                         <!-- Login-Button-End-->
                         <!-- User-Image-Start -->
-                        <div class="d-flex align-items-center">
+                        <!-- <div class="d-flex align-items-center">
                             <a class="user-link-a" href="#">
                                 <img class="user-img" src="./assets/images/user.png" alt="">
                                 <span class="user-first-name">Shahriar</span>
                             </a>
-                        </div>
+                        </div> -->
                         <!-- User-Image-End -->
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                                                         placeholder="eg. dhaka">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="searchHere" class="form-label">Search Here</label>
+                                                    <label for="searchHere" class="form-label">Search By</label>
                                                     <input type="text" class="form-control" id="searchHere"
                                                         placeholder="doctor name, speciality, etc">
                                                 </div>
@@ -242,13 +242,14 @@
         <div class="container">
             <h2 class="text-center">COVID-19</h2>
             <p class="text-center">Coronavirus (COVID-19) Dashboard</p>
-            <div class="mt-3">
+            <div>
                 <p>Last Update: 19.01.9999</p>
-                <p>Source: https://corona.gov.bd/</p>
+                <p>Source: <a class="text-decoration-none" href="https://corona.gov.bd/"
+                        target="_blank">https://corona.gov.bd/</a></p>
             </div>
             <div class="row">
                 <!-- service-1-start -->
-                <div class="col-12 col-md-4 col-lg-3 mt-2">
+                <div class="col-6 col-md-4 col-lg-3 mt-2">
                     <div class="service-wrapper">
                         <div class="inner-box box-blue">
                             <span id="confirmed" class="covid-num">not found</span>
@@ -257,7 +258,7 @@
                     </div>
                 </div>
                 <!-- service-1-end -->
-                <div class="col-12 col-md-4 col-lg-3 mt-2">
+                <div class="col-6 col-md-4 col-lg-3 mt-2">
                     <div class="service-wrapper">
                         <div class="inner-box box-pink">
                             <span id="deaths" class="covid-num">not found</span>
@@ -265,7 +266,7 @@
                         <h6 class="header">New Death</h6>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 mt-2">
+                <div class="col-6 col-md-4 col-lg-3 mt-2">
                     <div class="service-wrapper">
                         <div class="inner-box box-green">
                             <span id="recovered" class="covid-num">not found</span>
@@ -273,7 +274,7 @@
                         <h6 class="header">New Recovered</h6>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 mt-2">
+                <div class="col-6 col-md-4 col-lg-3 mt-2">
                     <div class="service-wrapper">
                         <div class="inner-box box-purple">
                             <span id="newRecovered" class="covid-num">-999999</span>

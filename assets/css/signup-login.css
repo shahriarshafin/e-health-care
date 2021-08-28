@@ -1,0 +1,54 @@
+body {
+	background-color: #f0f2f5;
+	height: 100vh;
+	font-family: roboto, sans-serif;
+}
+
+section {
+	padding: 20px 0px;
+}
+.mt-custom {
+	margin-top: 10rem;
+}
+.first-parent {
+	background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.5)),
+		url("https://images.unsplash.com/photo-1503435824048-a799a3a84bf7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.custom-red {
+	color: #ed4c4c;
+}
+.btn-custom-red {
+	background-color: #ed4c4c;
+	color: #fff;
+}
+.btn-custom-red:hover {
+	background-color: #be2323;
+	color: #fff;
+}
+.custom-shadow {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	padding: 30px;
+}
+/* ............................. */
+/* loging page */
+.login-first-parent {
+	background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.5)),
+		url("../images/login-hero.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 80vh;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.login-first-parent {
+		height: 55vh;
+	}
+	.lower-div {
+		font-size: 12px;
+	}
+}
