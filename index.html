@@ -17,6 +17,10 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- tagify -->
+    <script src="https://unpkg.com/@yaireo/tagify"></script>
+    <script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
+    <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>E-Health Care | Home</title>
@@ -132,12 +136,13 @@
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="pills-appointment-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-appointment" type="button" role="tab"
-                                        aria-controls="pills-appointment" aria-selected="true">Appointments</button>
+                                        aria-controls="pills-appointment" aria-selected="true">Based on
+                                        city / speciality</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="pills-disease-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-disease" type="button" role="tab"
-                                        aria-controls="pills-disease" aria-selected="false">According to
+                                        aria-controls="pills-disease" aria-selected="false">Based on
                                         disease</button>
                                 </li>
                             </ul>
@@ -172,24 +177,18 @@
                                     aria-labelledby="pills-disease-tab">
                                     <!-- deases-search-start -->
                                     <div class="row">
-                                        <div class="col-12 col-lg-6">
-                                            <h3 class="mb-5">upcomming</h3>
+                                        <h3 class="text-center my-3">Find Doctor Based on Disease</h3>
+
+                                        <div class="col-12">
                                             <form>
-                                                <div class="mb-3">
-                                                    <label for="setectCity" class="form-label">Select City</label>
-                                                    <input type="text" class="form-control" id="setectCity"
-                                                        placeholder="eg. dhaka">
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="submit" class="btn btn-primary mb-2">Submit
+                                                    </button>
                                                 </div>
-                                                <div class="mb-3">
-                                                    <label for="searchHere" class="form-label">Search Here</label>
-                                                    <input type="text" class="form-control" id="searchHere"
-                                                        placeholder="doctor name, speciality, etc">
-                                                </div>
-                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <input name='tags-manual-suggestions'
+                                                    class="form-control border border-primary"
+                                                    placeholder='write and select disease name'>
                                             </form>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <img class="img-fluid" width="90%" alt="" src="./assets/images/doctors.svg">
                                         </div>
                                     </div>
                                     <!-- deases-search-end -->
@@ -306,6 +305,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <!-- Main JS -->
+    <script type="text/javascript" src="text.json"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
