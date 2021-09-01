@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="icon" href="./assets/image/favicon-32x32.png" type="image/gif" sizes="32x32">
-    <link rel="shortcut icon" href="./assets/image/favicon-32x32.png" type="image/gif" sizes="32x32">
-    <link rel="apple-touch-icon" href="./assets/image/apple-touch-icon.png" type="image/gif">
+    <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="64x64">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/gif" sizes="64x64">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png" type="image/gif">
     <!-- Google Font CDN -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <!-- Bootstrap CSS -->
@@ -176,20 +176,26 @@
                                 <div class="tab-pane fade" id="pills-disease" role="tabpanel"
                                     aria-labelledby="pills-disease-tab">
                                     <!-- deases-search-start -->
-                                    <div class="row">
-                                        <h3 class="text-center my-3">Find Doctor Based on Disease</h3>
-
-                                        <div class="col-12">
+                                    <div class="row mt-5">
+                                        <div class="col-3 d-none d-lg-block d-xl-block">
+                                            <img class="img-fluid" src="./assets/images/medicine-1.svg" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-6 border border-5 border-light">
+                                            <h3 class="text-center my-3">Find Doctor Based on Disease</h3>
                                             <form>
+                                                <textarea name='tags2' placeholder='write and select disease name'
+                                                    class="border border-primary">
+                                                </textarea>
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="submit" class="btn btn-primary mb-2">Submit
+                                                    <button type="submit" class="btn btn-primary mt-2">Submit
                                                     </button>
                                                 </div>
-                                                <input name='tags-manual-suggestions'
-                                                    class="form-control border border-primary"
-                                                    placeholder='write and select disease name'>
                                             </form>
                                         </div>
+                                        <div class="col-3 d-none d-lg-block d-xl-block">
+                                            <img class="img-fluid" src="./assets/images/medicine-2.svg" alt="">
+                                        </div>
+
                                     </div>
                                     <!-- deases-search-end -->
                                 </div>
