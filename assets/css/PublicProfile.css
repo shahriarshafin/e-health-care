@@ -1,0 +1,262 @@
+body {
+    /* #f0f2f5 */
+	background-color: #f0f2f5;
+	height: 100vh;
+	font-family: roboto, sans-serif;
+}
+
+
+
+/* navbar */
+/* NAVBAR */
+.navbar-nav .nav-item {
+	margin-left: 25px;
+	transition: all 0.5s;
+	border-radius: 0.25rem;
+}
+.navbar-nav .nav-item:hover {
+	background-color: #eaeaea;
+}
+.navbar-nav .nav-item .nav-link {
+	color: rgba(0, 0, 0, 0.952);
+	font-size: 18px;
+	font-weight: 400;
+}
+.signup-btn {
+	font-size: 18px;
+	color: #fff;
+	background-color: #0076bc;
+}
+.signup-btn:hover {
+	color: #fff;
+	background-color: #00649e;
+}
+.user-img {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border: 2px solid #0080ca;
+	background-color: #00649e;
+	transition: all 0.5s;
+}
+.user-img:hover {
+	border: 2px solid #155d86;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+		rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.user-link-a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.952);
+}
+.user-first-name {
+	font-size: 18px;
+	font-weight: 400;
+	margin-left: 0.2rem;
+}
+.navbar-shadow {
+	box-shadow: 0px 1px 20px -7px rgb(0 0 0 / 52%);
+}
+/* HERO SECTION */
+.hero {
+	background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.5)),
+		url("../images/hero-bg.png") top center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 370px;
+	background-size: cover;
+}
+.hero-description {
+	line-height: 1.8;
+}
+
+.feture-bar {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	background-color: #00649e;
+	border-radius: 10px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	color: white;
+	background-color: #ed4c4c;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+	color: rgb(235, 235, 235);
+}
+/* end nav */
+
+.mt-custom {
+	margin-top: 10rem;
+}
+.first-parent {
+	background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.5)),
+		url("https://images.unsplash.com/photo-1503435824048-a799a3a84bf7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.custom-red {
+	color: #ed4c4c;
+}
+.btn-custom-red {
+	background-color: #ed4c4c;
+	color: #fff;
+}
+.btn-custom-red:hover {
+	background-color: #be2323;
+	color: #fff;
+}
+.custom-shadow {
+    background-image: url("../images/bg2.gif");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	padding: 30px;
+}
+/* ............................. */
+/* login page */
+.login-first-parent {
+    justify-content: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.5)),
+		url("../images/login-hero.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 80vh;
+}
+
+
+
+
+
+
+.card {
+    padding-top: 20px;
+    background-color: #EAF7E8;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-items { 
+    width: 250px;  
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .circle-1 {
+    border-radius: 50%;
+    width: 100%;
+    padding-bottom: 80%;  
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #26a69a transparent #26a69a #26a69a;
+    top: 0px;
+    transition: all 1.5s ease-in-out;
+  }
+  
+  .card:hover .circle-1 {
+    transform: rotate(360deg);
+  }
+  
+  .circle-2 {
+    border-radius: 50%; 
+    width: 95%;    
+    padding-bottom: 80%;  
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #26a69a #26a69a #26a69a transparent;
+    transition: all 1.5s ease-in-out;
+  }
+  
+  @media (min-width: 225px) {
+    .circle-2 {
+        top: 1.5%;
+    }
+  }
+  
+  .card:hover .circle-2 {  
+    transform: rotate(-360deg);
+  }
+  
+  .image {
+    
+    border-radius: 50%;
+      /* background-image: url(http://cheb-room.ru/uploads/cheb/2016/11/w9RC4W-QqXw-200x200.jpg); */
+      width: 90%;    
+      padding-bottom: 90%;
+      margin: 6%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;  
+  }
+  
+  @media (min-width: 225px) {
+    .image {
+        margin: 5%;
+    }
+  }
+  
+  .name {
+    color: #00796b;  
+    margin: 30px 0 0;
+    text-align: center;  
+  }
+  
+  .role {
+    color: #00796b;
+    text-align: center;  
+    margin: 5px 0;
+  }
+  
+  .card-contact {
+    text-decoration: none;
+    color: #00796b;
+    border: 2px solid #00796b;
+    border-radius: 20px;
+    margin: 15px 0 30px;
+    padding: 5px;
+    text-align: center;
+    transition: all 2s;
+  }
+  
+  .card-contact:hover {
+    color: red;  
+    /* background: linear-gradient(to bottom, #E4F6EA, #EFECF9);  */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.login-first-parent {
+		height: 55vh;
+	}
+	.lower-div {
+		font-size: 12px;
+	}
+	.mt-custom {
+		margin-top: 3rem;
+	}
+}
