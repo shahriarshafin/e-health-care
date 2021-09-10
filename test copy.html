@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="64x64">
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/gif" sizes="64x64">
+  <link rel="apple-touch-icon" href="./assets/images/favicon.png" type="image/gif">
+  <!-- Google Font CDN -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/covid.css">
+  <title>E-Health Care | Home</title>
+</head>
+
+<body>
+  <!-- Navbar-Start -->
+  <div class="navbar-shadow">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/logo.svg" alt="" width="75%" height="auto">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Heart Checkup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"> <span class="text-danger">Covid-19</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About Us</a>
+              </li>
+            </ul>
+            <!-- Login-Button-Start -->
+            <a href="./signup.html"><button class="btn signup-btn px-4">Sign Up</button></a>
+            <!-- Login-Button-End-->
+            <!-- User-Image-Start -->
+            <!-- <div class="d-flex align-items-center">
+                            <a class="user-link-a" href="#">
+                                <img class="user-img" src="./assets/images/user.png" alt="">
+                                <span class="user-first-name">Shahriar</span>
+                            </a>
+                        </div> -->
+            <!-- User-Image-End -->
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar-End -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center">
+        <h2 class="mx-5">Heart</h2>
+        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_S0psCs.json" background="transparent"
+          speed="1" style="width: 200px; height: 150px;" loop autoplay>
+        </lottie-player>
+        <h2 class="mx-5">Checkup</h2>
+      </div>
+      <div class="row">
+        <div class="col-8 mx-auto border border-primary">
+          <form class="row g-3 my-3">
+            <div class="col-md-6">
+
+              <label class="form-label">Gender</label>
+              <select class="form-select">
+                <option selected disabled>Select gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+              </select>
+
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Age</label>
+              <input type="number" placeholder="Insert age" class="form-control">
+            </div>
+            <div class="col-6">
+              <label class="form-label">Fasting blood sugar</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="fbs">
+                <label class="form-check-label">
+                  Gratter than 120 mg/dl
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="fbs" checked>
+                <label class="form-check-label">
+                  Less than 120 mg/dl
+                </label>
+              </div>
+            </div>
+            <div class="col-6">
+              <label class="form-label">Exercise induced angina</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exang" checked>
+                <label class="form-check-label">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exang">
+                <label class="form-check-label">
+                  No
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Resting electrocardiographic results
+              </label>
+              <select class="form-select">
+                <option selected disabled>Choose...</option>
+                <option value="1">Probable or definite left ventricular
+                  hypertrophy by Estes’ criteria
+                </option>
+                <option value="2">Normal
+                </option>
+                <option value="3">having ST-T wave abnormality (T wave inversions and/or ST elevation or
+                  depression of > 0.05 mV)
+                </option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <label class="form-label">Resting blood pressure</label>
+              <input type="number" placeholder="mm Hg on admission to the hospital" class="form-control">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Chest pain type</label>
+              <select class="form-select">
+                <option value="1">Asymptomatic
+                </option>
+                <option value="2">Atypical angina
+                </option>
+                <option value="3">Non-anginal pain
+                </option>
+                <option value="4">Typical angina
+                </option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Heart rate achieved</label>
+              <input type="number" placeholder="Insert maximum value" class="form-control">
+            </div>
+            <div class="col-12">
+              <label class="form-label">Blood disorder (Thalassemia)
+              </label>
+              <select class="form-select">
+                <option selected disabled>Choose...</option>
+                <option value="1">Fixed defect (no blood flow in some part of the heart)
+
+                </option>
+                <option value="2">Normal blood flow
+
+                </option>
+                <option value="3">Reversible defect (a blood flow is observed but it is not normal)
+                </option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Slope of peak exercise ST segment</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="slope" value="1">
+                <label class="form-check-label">Downsloping</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="slope" value="2" checked>
+                <label class="form-check-label">Flat</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="slope" value="3">
+                <label class="form-check-label">Upsloping</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Major vessels (0-3) colored by fluoroscopy</label><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="ca" value="1">
+                <label class="form-check-label">0</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="ca" value="2" checked>
+                <label class="form-check-label">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="ca" value="3">
+                <label class="form-check-label">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="ca" value="3">
+                <label class="form-check-label">3</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Cholesterol measurement in mg/dl</label>
+              <input type="number" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">ST depression induced by exercise relative to rest </label>
+              <input type="number" placeholder="‘ST’ relates to positions on the ECG plot." class="form-control">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer start -->
+  <footer class="bg-dark text-center">
+    <!-- Copyright -->
+    <div class="text-center p-3 text-light">
+      © Copyright <script>
+        document.write(new Date().getFullYear());
+      </script> |
+      <a class="text-decoration-none text-danger fw-bold" href="index.html">E-Health Care</a>
+      | All rights reserved
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- footer end -->
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+  </script>
+</body>
+
+</html>
