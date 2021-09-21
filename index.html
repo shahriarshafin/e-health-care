@@ -24,6 +24,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>E-Health Care | Home</title>
+
 </head>
 
 <body>
@@ -104,11 +105,6 @@
                                     role="tab" aria-controls="pills-search-hospital" aria-selected="false">Search
                                     Hospital</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link text-custom-white" id="pills-heart-checkup-tab"
-                                    data-bs-toggle="pill" data-bs-target="#pills-heart-checkup" type="button" role="tab"
-                                    aria-controls="pills-heart-checkup" aria-selected="false">Heart Checkup</button>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link text-custom-white" href="./ListOfDoctor.html">Doctor List</a>
                             </li>
@@ -153,17 +149,26 @@
                                     <div class="row">
                                         <div class="col-12 col-lg-6">
                                             <h3 class="mb-5">Get appointments for doctor</h3>
-                                            <form>
+
+                                            <form autocomplete="off" action="/">
+
                                                 <div class="mb-3">
-                                                    <label for="setectCity" class="form-label">Select City</label>
-                                                    <input type="text" class="form-control" id="setectCity"
-                                                        placeholder="eg. dhaka">
+                                                    <div class="autocomplete w-100">
+                                                        <label for="setectCity" class="form-label">Select
+                                                            City</label>
+                                                        <input id="cityField" type="text" class="form-control"
+                                                            placeholder="eg. dhaka">
+                                                    </div>
                                                 </div>
+
                                                 <div class="mb-3">
-                                                    <label for="searchHere" class="form-label">Search By</label>
-                                                    <input type="text" class="form-control" id="searchHere"
-                                                        placeholder="doctor name, speciality, etc">
+                                                    <div class="autocomplete w-100">
+                                                        <label for="setectCity" class="form-label">Search By</label>
+                                                        <input id="doctorSpeField" type="text" class="form-control"
+                                                            placeholder="doctor name, speciality, etc">
+                                                    </div>
                                                 </div>
+
                                                 <button type="submit" class="btn btn-primary">Submit</button>
                                             </form>
                                         </div>
@@ -208,17 +213,25 @@
                             <div class="row d-flex align-items-center">
                                 <div class="col-12 col-lg-6">
                                     <h3 class="mb-5">Search Hospital</h3>
-                                    <form>
+                                    <form autocomplete="off" action="/">
+
                                         <div class="mb-3">
-                                            <label for="setectCity" class="form-label">Select City</label>
-                                            <input type="text" class="form-control" id="setectCity"
-                                                placeholder="eg. dhaka">
+                                            <div class="autocomplete w-100">
+                                                <label for="setectCity" class="form-label">Select
+                                                    City</label>
+                                                <input id="cityField2" type="text" class="form-control"
+                                                    placeholder="eg. dhaka">
+                                            </div>
                                         </div>
+
                                         <div class="mb-3">
-                                            <label for="searchHere" class="form-label">Search Here</label>
-                                            <input type="text" class="form-control" id="searchHere"
-                                                placeholder="doctor name, speciality, etc">
+                                            <div class="autocomplete w-100">
+                                                <label for="setectCity" class="form-label">Search By</label>
+                                                <input id="doctorSpeField2" type="text" class="form-control"
+                                                    placeholder="doctor name, speciality, etc">
+                                            </div>
                                         </div>
+
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </form>
                                 </div>
@@ -228,12 +241,6 @@
                                 </div>
                             </div>
                             <!-- content-2-end -->
-                        </div>
-                        <div class="tab-pane fade" id="pills-heart-checkup" role="tabpanel"
-                            aria-labelledby="pills-heart-checkup-tab">
-                            <!-- content-3-start -->
-                            3
-                            <!-- content-3-end -->
                         </div>
                     </div>
                 </div>
@@ -257,7 +264,7 @@
                 <div class="col-6 col-md-4 col-lg-3 mt-2">
                     <div class="service-wrapper">
                         <div class="inner-box box-blue">
-                            <span id="confirmed" class="covid-num">not found</span>
+                            <span id="confirmed" class="covid-num">120</span>
                         </div>
                         <h6 class="header">New Infected</h6>
                     </div>
@@ -266,7 +273,7 @@
                 <div class="col-6 col-md-4 col-lg-3 mt-2">
                     <div class="service-wrapper">
                         <div class="inner-box box-pink">
-                            <span id="deaths" class="covid-num">not found</span>
+                            <span id="deaths" class="covid-num">700</span>
                         </div>
                         <h6 class="header">New Death</h6>
                     </div>
@@ -274,7 +281,7 @@
                 <div class="col-6 col-md-4 col-lg-3 mt-2">
                     <div class="service-wrapper">
                         <div class="inner-box box-green">
-                            <span id="recovered" class="covid-num">not found</span>
+                            <span id="recovered" class="covid-num">960</span>
                         </div>
                         <h6 class="header">New Recovered</h6>
                     </div>
