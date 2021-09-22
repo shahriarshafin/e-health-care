@@ -79,8 +79,34 @@
 .bl-custom-blue {
 	border-left: 10px solid #31b5e6;
 }
+.bl-custom-red {
+	border-left: 10px solid #c92e25;
+}
+
+.bl-custom-yellow {
+	border-left: 10px solid #ffc456;
+}
 
 .btn-services:hover {
 	box-shadow: rgb(0 0 0 / 42%) -1px 11px 20px -10px,
 		rgb(0 0 0 / 0%) 0px 0px 11px 1px;
+}
+
+.mt-custom-7 {
+	margin-top: 7rem;
+}
+
+.bg-custom-green {
+	background-color: #359733;
+}
+
+.bg-custom-blue {
+	background-color: #0076bc;
+}
+.bg-custom-red {
+	background-color: #c92e25;
+}
+
+.bg-custom-yellow {
+	background-color: #ffc456;
 }

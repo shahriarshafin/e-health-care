@@ -18,6 +18,9 @@ section {
 	color: rgba(238, 238, 238, 0.685);
 }
 /* NAVBAR */
+.navbar {
+	background-color: #fff;
+}
 .navbar-nav .nav-item {
 	margin-left: 25px;
 	transition: all 0.5s;
@@ -185,7 +188,6 @@ section {
 
 .footer p {
 	font-size: 15px;
-	font-family: "Nunito Sans", sans-serif;
 	color: #252429;
 	font-weight: 400;
 	line-height: 25px;
