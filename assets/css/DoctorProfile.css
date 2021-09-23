@@ -235,6 +235,136 @@ body {
 	padding-top: 70px;
 }
 
+
+/*--------------------------------------------------------------
+# Footer Area
+--------------------------------------------------------------*/
+
+.footer p {
+	font-size: 15px;
+	color: #252429;
+	font-weight: 400;
+	line-height: 25px;
+	margin: 0 0 15px 0;
+}
+.footer img {
+	width: 70%;
+}
+.footer a {
+	text-decoration: none;
+}
+.footer ul {
+	padding-left: 0;
+}
+
+.footer input:focus {
+	outline: none;
+}
+.footer a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+	color: #247023;
+	/* font-size: 17px; */
+}
+
+.footer {
+	background: #111111;
+	padding-top: 70px;
+}
+.footer-about {
+	margin-bottom: 30px;
+}
+.footer-about .footer-logo {
+	margin-bottom: 25px;
+	width: 350px;
+}
+.footer-about p {
+	color: #b7b7b7;
+	margin-bottom: 30px;
+}
+.footer-widget {
+	margin-bottom: 30px;
+}
+.footer-widget h6 {
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+.footer-widget ul li {
+	line-height: 36px;
+	list-style: none;
+}
+.footer-widget ul li a {
+	color: #b7b7b7;
+	font-size: 14px;
+}
+.footer-widget ul li a:hover {
+	color: #0076bc;
+}
+.footer-widget .footer-newslatter p {
+	color: #b7b7b7;
+}
+.footer-widget .footer-newslatter form {
+	position: relative;
+}
+.footer-widget .footer-newslatter form input {
+	width: 100%;
+	font-size: 14px;
+	color: #ffffff;
+	background: transparent;
+	border: none;
+	padding: 15px 0;
+	border-bottom: 2px solid #ffffff;
+}
+.footer-widget .footer-newslatter form input::placeholder {
+	color: #b7b7b7;
+}
+.footer-widget .footer-newslatter form button {
+	color: #b7b7b7;
+	font-size: 16px;
+	position: absolute;
+	right: 5px;
+	top: 0;
+	height: 100%;
+	background: transparent;
+	border: none;
+}
+.footer-copyright-text {
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 20px 0;
+	margin-top: 40px;
+}
+.footer-copyright-text p {
+	color: #b7b7b7;
+	margin-bottom: 0;
+}
+.footer-copyright-text p i {
+	color: #e53637;
+}
+.footer-copyright-text p a {
+	font-weight: bolder;
+	color: white;
+}
+
+.footer-copyright-text p a:hover {
+	/* font-size: 17px; */
+	color: #0076bc;
+}
+.social-icons i {
+	transition: all 0.2s ease;
+	font-size: 26px;
+	padding: 8px;
+}
+.social-icons i:hover {
+	box-shadow: 0px 3px 8px -2px #0076bc;
+	border-radius: 10px;
+}
+
+
 @media screen and (max-width: 600px) {
 	.card .doctorcard {
 		width: 5rem;
