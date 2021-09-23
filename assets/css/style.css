@@ -199,9 +199,11 @@ section {
 
 .footer-social-links{
 	padding: 20px;
+	font-size: 30px;
+	
 }
 
-.fab  {
+.footer-social-links.fab  {
 	padding: 10px;
 	font-size: 30px;
 	width: 30px;
@@ -212,10 +214,8 @@ section {
 	color: #fff;
   }
   
-  .fab:hover {
-	  opacity: 0.7;
-  }
- .fas{
+
+  .footer-social-links.fas{
 	padding: 10px;
 	font-size: 30px;
 	width: 30px;
@@ -225,7 +225,7 @@ section {
 	border-radius: 50%;
 	color: #fff;
  }
- .fas:hover {
+ .footer-social-links.fas:hover {
 	opacity: 0.7;
 }
 
@@ -233,9 +233,10 @@ section {
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 300px;
+    width: 350px;
     height: 200px;
-    padding-left: 0px;
+    padding-left: 30px;
+	padding-right: 30px;
       perspective: 1000px; /*Remove this if you don't want the 3D effect */ 
   }
   
