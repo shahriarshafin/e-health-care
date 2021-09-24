@@ -2,28 +2,27 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
+
     <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="64x64">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/gif" sizes="64x64">
     <link rel="apple-touch-icon" href="./assets/images/favicon.png" type="image/gif">
-    <!-- Google Font CDN -->
+
+    <title>Home | E-Health Care</title>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- tagify -->
+
     <script src="https://unpkg.com/@yaireo/tagify"></script>
     <script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
     <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
-    <!-- Main CSS -->
+
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>E-Health Care | Home</title>
 
 </head>
 
@@ -55,20 +54,62 @@
                                         class="text-danger">Covid-19</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">About Us</a>
+                                <a class="nav-link" aria-current="page" href="#aboutUs">About Us</a>
                             </li>
                         </ul>
-                        <!-- Login-Button-Start -->
+                        <!-- Login-Button -->
                         <!-- <a href="./signup.html"><button class="btn signup-btn px-4">Sign Up</button></a> -->
-                        <!-- Login-Button-End-->
-                        <!-- User-Image-Start -->
-                        <div class="d-flex align-items-center">
-                            <a class="user-link-a" href="PublicProfile.html">
+
+                        <!-- User-Profile -->
+                        <div class="d-flex align-items-center btn-group">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 <img class="user-img" src="./assets/images/user.png" alt="user">
                                 <span class="user-first-name">Shahriar</span>
-                            </a>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="PublicProfile.html">profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a type="button" class="btn dropdown-item" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        Log Out
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Log out Popup -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content modal-wrapper border-0">
+                                        <div class="modal-top">
+                                            <i class="danger-icon fas fa-exclamation-triangle"></i>
+                                            <div>
+                                                <h5 class="modal-heading">Log out from this session</h5>
+                                                <p class="modal-description">Are you sure you want to log out? All of
+                                                    your data
+                                                    will be temporary
+                                                    removed. You have to sign in again.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-bottom">
+                                            <button type="button" class="btn btn-outline-primary mx-3"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                            <a href="http://">
+                                                <button type="button" class="btn btn-custom-danger">
+                                                    Log out
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <!-- User-Image-End -->
                     </div>
                 </div>
             </nav>
@@ -302,74 +343,89 @@
 
 
     <!-- About us section start -->
-    <section>
+    <section id="aboutUs">
         <div class="container">
             <h2 class="text-center">About Us</h2>
             <p class="text-center">Meet Our Developers</p>
             <div class="aboutUs ">
-            
+
                 <div class="d-flex justify-content-between">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <h2>Shahriar Shafin</h2>
-                        <p >Student</p>
-                        <p >University of Asia Pacific</p>
-                      </div>
-                      <div class="flip-card-back">
-                        <div class="footer-social-links">
-                          <a href="#" title="Facebook" target="_blank"><i class="text-white fab fa-facebook"></i></a>
-                          <a href="#" title="Instagram" target="_blank"><i class="text-white fab fa-instagram"></i></a>
-                          <a href="#" title="Gmail" target="_blank"><i class="text-white fas fa-envelope"></i></a>
-                          <a href="#" title="LinkedIn" target="_blank"><i class="text-white fab fa-linkedin"></i></a>
-                          <a href="#" title="github" target="_blank"><i class="text-white fab fa-github"></i></a>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2>Shahriar Shafin</h2>
+                                <p>Student</p>
+                                <p>University of Asia Pacific</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="footer-social-links">
+                                    <a href="#" title="Facebook" target="_blank"><i
+                                            class="text-white fab fa-facebook"></i></a>
+                                    <a href="#" title="Instagram" target="_blank"><i
+                                            class="text-white fab fa-instagram"></i></a>
+                                    <a href="#" title="Gmail" target="_blank"><i
+                                            class="text-white fas fa-envelope"></i></a>
+                                    <a href="#" title="LinkedIn" target="_blank"><i
+                                            class="text-white fab fa-linkedin"></i></a>
+                                    <a href="#" title="github" target="_blank"><i
+                                            class="text-white fab fa-github"></i></a>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <h2>Sabbir Hosen</h2>
-                        <p>Student</p>
-                        <p>University of Asia Pacific</p>
-                      </div>
-                      <div class="flip-card-back">
-                       <div class="footer-social-links">
-                           <a href="#" title="Facebook" target="_blank"><i class="text-white fab fa-facebook"></i></a>
-                           <a href="#" title="Instagram" target="_blank"><i class="text-white fab fa-instagram"></i></a>
-                           <a href="#" title="Gmail" target="_blank"><i class="text-white fas fa-envelope"></i></a>
-                           <a href="#" title="LinkedIn" target="_blank"><i class="text-white fab fa-linkedin"></i></a>
-                           <a href="#" title="github" target="_blank"><i class="text-white fab fa-github"></i></a>
-                         </div>
-                      </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2>Sabbir Hosen</h2>
+                                <p>Student</p>
+                                <p>University of Asia Pacific</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="footer-social-links">
+                                    <a href="#" title="Facebook" target="_blank"><i
+                                            class="text-white fab fa-facebook"></i></a>
+                                    <a href="#" title="Instagram" target="_blank"><i
+                                            class="text-white fab fa-instagram"></i></a>
+                                    <a href="#" title="Gmail" target="_blank"><i
+                                            class="text-white fas fa-envelope"></i></a>
+                                    <a href="#" title="LinkedIn" target="_blank"><i
+                                            class="text-white fab fa-linkedin"></i></a>
+                                    <a href="#" title="github" target="_blank"><i
+                                            class="text-white fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <h2>Ashraful haque</h2>
-                        <p>Student</p>
-                        <p>University of Asia Pacific</p>
-                      </div>
-                      <div class="flip-card-back">
-                       <div class="footer-social-links">
-                           <a href="#" title="Facebook" target="_blank"><i class="text-white fab fa-facebook"></i></a>
-                           <a href="#" title="Instagram" target="_blank"><i class="text-white fab fa-instagram"></i></a>
-                           <a href="#" title="Gmail" target="_blank"><i class="text-white fas fa-envelope"></i></a>
-                           <a href="#" title="LinkedIn" target="_blank"><i class="text-white fab fa-linkedin"></i></a>
-                           <a href="#" title="github" target="_blank"><i class="text-white fab fa-github"></i></a>
-                         </div>
-                      </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2>Ashraful haque</h2>
+                                <p>Student</p>
+                                <p>University of Asia Pacific</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="footer-social-links">
+                                    <a href="#" title="Facebook" target="_blank"><i
+                                            class="text-white fab fa-facebook"></i></a>
+                                    <a href="#" title="Instagram" target="_blank"><i
+                                            class="text-white fab fa-instagram"></i></a>
+                                    <a href="#" title="Gmail" target="_blank"><i
+                                            class="text-white fas fa-envelope"></i></a>
+                                    <a href="#" title="LinkedIn" target="_blank"><i
+                                            class="text-white fab fa-linkedin"></i></a>
+                                    <a href="#" title="github" target="_blank"><i
+                                            class="text-white fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-               </div>
+            </div>
         </div>
-           
-           
-          
-         </section>
+
+
+
+    </section>
 
 
 

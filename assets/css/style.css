@@ -68,6 +68,53 @@ section {
 .navbar-shadow {
 	box-shadow: 0px 1px 20px -7px rgb(0 0 0 / 52%);
 }
+
+.modal-wrapper {
+	background-color: rgb(255, 255, 255);
+	box-shadow: rgb(0 0 0 / 31%) 0px 0px 1px 0px,
+		rgb(0 0 0 / 25%) 0px 7px 16px -4px;
+}
+.modal-top {
+	display: flex;
+	padding: 24px 18px 16px;
+}
+.modal-heading {
+	color: rgb(23, 43, 77);
+	margin: 0;
+	padding-top: 7px;
+}
+.modal-description {
+	margin: 8px 0px 0px;
+	font-size: 0.875rem;
+	color: rgb(107, 119, 140);
+}
+.danger-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 40px;
+	height: 40px;
+	font-size: 1.25rem;
+	border-radius: 50%;
+	background-color: rgba(244, 67, 54, 0.08);
+	color: rgb(244, 67, 54);
+	margin-right: 16px;
+}
+.modal-bottom {
+	display: flex;
+	justify-content: flex-end;
+	padding: 12px 24px;
+}
+.btn-custom-danger {
+	background-color: rgb(244, 67, 54);
+	color: white;
+}
+.btn-custom-danger:hover {
+	background-color: rgb(170, 46, 37);
+	color: white;
+}
+
 /* HERO SECTION */
 .hero {
 	background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.5)),
@@ -182,28 +229,23 @@ section {
 	text-align: center;
 }
 
-
 /* about us start */
 
-
-.aboutUs{
-    padding-top: 450px;
-    padding-bottom: 10px;
-    background-image:url("../images/aboutUs2.jpeg") ;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.aboutUs {
+	padding-top: 450px;
+	padding-bottom: 10px;
+	background-image: url("../images/aboutUs2.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-
-
-.footer-social-links{
+.footer-social-links {
 	padding: 20px;
 	font-size: 30px;
-	
 }
 
-.footer-social-links.fab  {
+.footer-social-links.fab {
 	padding: 10px;
 	font-size: 30px;
 	width: 30px;
@@ -212,10 +254,9 @@ section {
 	margin: 10px 2px;
 	border-radius: 50%;
 	color: #fff;
-  }
-  
+}
 
-  .footer-social-links.fas{
+.footer-social-links.fas {
 	padding: 10px;
 	font-size: 30px;
 	width: 30px;
@@ -224,71 +265,63 @@ section {
 	margin: 10px 2px;
 	border-radius: 50%;
 	color: #fff;
- }
- .footer-social-links.fas:hover {
+}
+.footer-social-links.fas:hover {
 	opacity: 0.7;
 }
 
-
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-    background-color: transparent;
-    width: 350px;
-    height: 200px;
-    padding-left: 30px;
+	background-color: transparent;
+	width: 350px;
+	height: 200px;
+	padding-left: 30px;
 	padding-right: 30px;
-      perspective: 1000px; /*Remove this if you don't want the 3D effect */ 
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-	
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-	  padding-top: 10px;
-    background-color: #00649e;
-    color: white;
-  }
+	perspective: 1000px; /*Remove this if you don't want the 3D effect */
+}
 
-  /* Style the back side */
-  .flip-card-back {
-	  padding-top: 30px;
-    background-color: #111111;
-    color: white;
-    transform: rotateY(180deg);
-  }
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+	padding-top: 10px;
+	background-color: #00649e;
+	color: white;
+}
+
+/* Style the back side */
+.flip-card-back {
+	padding-top: 30px;
+	background-color: #111111;
+	color: white;
+	transform: rotateY(180deg);
+}
 
 /* about us end */
-
-
-
-
-
-
-
-
 
 /*--------------------------------------------------------------
 # Footer Area

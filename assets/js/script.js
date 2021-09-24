@@ -1,7 +1,7 @@
 getdiseaseName();
 
 async function getdiseaseName() {
-	const jsondatas = await fetch("./assets/diseases.json");
+	const jsondatas = await fetch("./assets/dataAPI.json");
 	const getData = await jsondatas.json();
 
 	const diseases = getData.diseases;
