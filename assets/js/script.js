@@ -7,11 +7,12 @@ async function getdiseaseName() {
 	const diseases = getData.diseases;
 	const cities = getData.cities;
 	const doctorSpe = getData.doctorSpe;
+	const hospitals = getData.hospitals;
 
 	autocomplete(document.getElementById("cityField"), cities);
 	autocomplete(document.getElementById("cityField2"), cities);
 	autocomplete(document.getElementById("doctorSpeField"), doctorSpe);
-	autocomplete(document.getElementById("doctorSpeField2"), doctorSpe);
+	autocomplete(document.getElementById("hospitalField"), hospitals);
 
 	let input = document.querySelector("textarea[name=tags2]"),
 		tagify = new Tagify(input, {
