@@ -9,6 +9,8 @@
     <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="64x64">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/gif" sizes="64x64">
     <link rel="apple-touch-icon" href="./assets/images/favicon.png" type="image/gif">
+    
+    <title>Heart Checkup | E-Health Care</title>
     <!-- Google Font CDN -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <!-- Bootstrap CSS -->
@@ -19,7 +21,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>E-Health Care | Home</title>
+   
 </head>
 
 <body>
@@ -50,26 +52,69 @@
                                         class="text-danger">Covid-19</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">About Us</a>
+                                <a class="nav-link" aria-current="page" href="#aboutUs">About Us</a>
                             </li>
                         </ul>
-                        <!-- Login-Button-Start -->
+                        <!-- Login-Button -->
                         <!-- <a href="./signup.html"><button class="btn signup-btn px-4">Sign Up</button></a> -->
-                        <!-- Login-Button-End-->
-                        <!-- User-Image-Start -->
-                        <div class="d-flex align-items-center">
-                            <a class="user-link-a" href="PublicProfile.html">
+
+                        <!-- User-Profile -->
+                        <div class="d-flex align-items-center btn-group">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 <img class="user-img" src="./assets/images/user.png" alt="user">
                                 <span class="user-first-name">Shahriar</span>
-                            </a>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="PublicProfile.html">profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a type="button" class="btn dropdown-item" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        Log Out
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Log out Popup -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content modal-wrapper border-0">
+                                        <div class="modal-top">
+                                            <i class="danger-icon fas fa-exclamation-triangle"></i>
+                                            <div>
+                                                <h5 class="modal-heading">Log out from this session</h5>
+                                                <p class="modal-description">Are you sure you want to log out? All of
+                                                    your data
+                                                    will be temporary
+                                                    removed. You have to sign in again.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-bottom">
+                                            <button type="button" class="btn btn-outline-primary mx-3"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                            <a href="http://">
+                                                <button type="button" class="btn btn-custom-danger">
+                                                    Log out
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <!-- User-Image-End -->
                     </div>
                 </div>
             </nav>
         </div>
     </div>
     <!-- Navbar-End -->
+
     <section class="heart-page-section bg-light">
         <div class="container">
             <div>

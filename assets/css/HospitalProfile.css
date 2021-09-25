@@ -1,9 +1,16 @@
 body {
-	margin-top: 0px;
+	background-color: #fff;
+	font-family: roboto, sans-serif;
+}
+section{
 	background: #f3f3f3;
+	padding: 20px 0px;
 }
 
 /* NAVBAR */
+.navbar {
+	background-color: #fff;
+}
 .navbar-nav .nav-item {
 	margin-left: 25px;
 	transition: all 0.5s;
@@ -51,38 +58,53 @@ body {
 .navbar-shadow {
 	box-shadow: 0px 1px 20px -7px rgb(0 0 0 / 52%);
 }
-/* HERO SECTION */
-.hero {
-	background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.5)),
-		url("../images/hero-bg.png") top center;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 370px;
-	background-size: cover;
-}
-.hero-description {
-	line-height: 1.8;
-}
 
-.feture-bar {
+.modal-wrapper {
+	background-color: rgb(255, 255, 255);
+	box-shadow: rgb(0 0 0 / 31%) 0px 0px 1px 0px,
+		rgb(0 0 0 / 25%) 0px 7px 16px -4px;
+}
+.modal-top {
 	display: flex;
+	padding: 24px 18px 16px;
+}
+.modal-heading {
+	color: rgb(23, 43, 77);
+	margin: 0;
+	padding-top: 7px;
+}
+.modal-description {
+	margin: 8px 0px 0px;
+	font-size: 0.875rem;
+	color: rgb(107, 119, 140);
+}
+.danger-icon {
+	display: flex;
+	align-items: center;
 	justify-content: center;
-	padding: 20px;
-	background-color: #00649e;
-	border-radius: 10px;
+	flex-shrink: 0;
+	width: 40px;
+	height: 40px;
+	font-size: 1.25rem;
+	border-radius: 50%;
+	background-color: rgba(244, 67, 54, 0.08);
+	color: rgb(244, 67, 54);
+	margin-right: 16px;
 }
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.modal-bottom {
+	display: flex;
+	justify-content: flex-end;
+	padding: 12px 24px;
+}
+.btn-custom-danger {
+	background-color: rgb(244, 67, 54);
 	color: white;
-	background-color: #ed4c4c;
+}
+.btn-custom-danger:hover {
+	background-color: rgb(170, 46, 37);
+	color: white;
 }
 
-.nav-link:focus,
-.nav-link:hover {
-	color: rgb(235, 235, 235);
-}
-
-/* 
 .card.user-card {
     border-top: none;
     -webkit-box-shadow: 0 0 1px 2px rgba(0,0,0,0.05), 0 -2px 1px -2px rgba(0,0,0,0.04), 0 0 0 -1px rgba(0,0,0,0.05);

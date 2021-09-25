@@ -2,9 +2,15 @@
 <html lang="en">
 
 <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="64x64">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/gif" sizes="64x64">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png" type="image/gif">
+
     <!-- Google Font CDN -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -15,60 +21,101 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/HospitalProfile.css">
-    <title>Hospital profile</title>
+    <title>Hospital Profile | E-Health Care</title>
 </head>
 
 <body>
 
-    <section>
-        <!-- Navbar-Start -->
-        <div class="navbar-shadow bg-white">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="./assets/images/logo.svg" alt="" width="75%" height="auto">
-                        </a>
+    <!-- Navbar-Start -->
+    <div class="navbar-shadow">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/images/logo.svg" alt="" width="75%" height="auto">
+                    </a>
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="heart-checkup.html">Heart Checkup</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="covid.html"> <span
+                                        class="text-danger">Covid-19</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#aboutUs">About Us</a>
+                            </li>
+                        </ul>
+                        <!-- Login-Button -->
+                        <!-- <a href="./signup.html"><button class="btn signup-btn px-4">Sign Up</button></a> -->
+
+                        <!-- User-Profile -->
+                        <div class="d-flex align-items-center btn-group">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img class="user-img" src="./assets/images/user.png" alt="user">
+                                <span class="user-first-name">Shahriar</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="PublicProfile.html">profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="heart-checkup.html">Heart Checkup</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="covid.html"> <span
-                                            class="text-danger">Covid-19</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">About Us</a>
+                                <li>
+                                    <a type="button" class="btn dropdown-item" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        Log Out
+                                    </a>
                                 </li>
                             </ul>
-                            <!-- Login-Button-Start -->
-                            <!-- <a href="./signup.html"><button class="btn signup-btn px-4">Sign Up</button></a> -->
-                            <!-- Login-Button-End-->
-                            <!-- User-Image-Start -->
-                            <div class="d-flex align-items-center">
-                                <a class="user-link-a" href="PublicProfile.html">
-                                    <img class="user-img" src="./assets/images/user.png" alt="user">
-                                    <span class="user-first-name">Shahriar</span>
-                                </a>
+
+                            <!-- Log out Popup -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content modal-wrapper border-0">
+                                        <div class="modal-top">
+                                            <i class="danger-icon fas fa-exclamation-triangle"></i>
+                                            <div>
+                                                <h5 class="modal-heading">Log out from this session</h5>
+                                                <p class="modal-description">Are you sure you want to log out? All of
+                                                    your data
+                                                    will be temporary
+                                                    removed. You have to sign in again.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-bottom">
+                                            <button type="button" class="btn btn-outline-primary mx-3"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                            <a href="http://">
+                                                <button type="button" class="btn btn-custom-danger">
+                                                    Log out
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- User-Image-End -->
+
                         </div>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
-        <!-- Navbar-End -->
-    </section>
+    </div>
+    <!-- Navbar-End -->
+
 
     <section>
         <div class="container">
@@ -106,20 +153,22 @@
                                         <p class="m-t-15 ">
                                             Shabukta Dental Surgery, House- F/22, Zakir Hossain Road, Mohammadpur
 
-                                        </p </div> <div class="row">
-                                        <div class="col-md-6">
-                                            <p>City:</p>
+                                        </p </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p>City:</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <P>Dhaka</P>
+                                            </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <P>Dhaka</P>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <P>Number:</P>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> 01******000</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <P>Number:</P>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p> 01******000</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -128,28 +177,16 @@
                     </div>
                 </div>
             </div>
-        </div>
 
         </div>
     </section>
-
-    <!-- test -->
-    <!-- <div class="Doctor-card">
-    <img src="./assets/images/Doctor profile pic-unsplash.jpg" alt="Avatar" style="width:50%">
-    <div class="Doctor-card-container">
-        <h4><b>John Doe</b></h4>
-        <p>Architect & Engineer</p>
-    </div>
-</div> -->
-
-
 
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="card doctorcard">
-                        <img src="./assets/images/Hospital-4.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/images/Hospital-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Square hospital Ltd</h5>
                             <p class="card-text">City Name</p>
@@ -158,7 +195,7 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="card doctorcard">
-                        <img src="./assets/images/Hospital-3.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/images/Hospital-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Dr. Atila Rahman</h5>
                             <p class="card-text">Dental Surgen</p>
@@ -191,156 +228,94 @@
 
 
 
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
 
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-about">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="./assets/images/logo-white.svg" alt=""></a>
+                        </div>
+                        <p>E-Health Care is a dream that turned into a tech based startup, a business with a great
+                            purpose to create positive impacts in peoples' lives.</p>
 
+                        <!-- Add Social Icon -->
+                        <div>
+                            <a href="example.com" target="_blank"><span class="social-icons"><i class="fab fa-facebook"
+                                        style="color:#30629d;"></i></span></a>
+                            <a href="example.com" target="_blank"><span class="social-icons"><i class="fab fa-twitter"
+                                        style="color:#00A7E6;"></i></span></a>
+                            <a href="example.com" target="_blank"><span class="social-icons"><i class="fab fa-linkedin"
+                                        style="color:#0073B1;"></i></span></a>
+                            <a href="example.com" target="_blank"><span class="social-icons"><i class="fab fa-instagram"
+                                        style="color:#D32C86;"></i></span></a>
+                        </div>
 
-    <!-- test -->
-    <!-- <div class="container">
-        <div class="card user-card">
-            <div class="card-block">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="Doctorcard">
-                            <img src="./assets/images/Doctor profile pic-unsplash.jpg" alt="Avatar" style="width:60%">
-                            <div class="Doctorcardcontainer">
-                                <h4><b>John Doe</b></h4>
-                                <p>Architect & Engineer</p>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-3">
-                        <div class="Doctorcard">
-                            <img src="./assets/images/Doctor profile pic-unsplash.jpg" alt="Avatar" style="width:60%">
-                            <div class="Doctorcardcontainer">
-                                <h4><b>John Doe</b></h4>
-                                <p>Architect & Engineer</p>
-                            </div>
-                        </div>
+                </div>
+
+                <div class="col-lg-3 offset-lg-1 col-md-3 col-6">
+                    <div class="footer-widget">
+                        <h6>Link Group</h6>
+                        <ul>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Doctor</a></li>
+                            <li><a href="#">Disease</a></li>
+                            <li><a href="#">Hospitals</a></li>
+                        </ul>
                     </div>
-                    <div class="col-3">
-                        <div class="Doctorcard">
-                            <img src="./assets/images/Doctor profile pic-unsplash.jpg" alt="Avatar" style="width:60%">
-                            <div class="Doctorcardcontainer">
-                                <h4><b>John Doe</b></h4>
-                                <p>Architect & Engineer</p>
-                            </div>
-                        </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-6">
+                    <div class="footer-widget">
+                        <h6>Link Group 2</h6>
+                        <ul>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Doctor</a></li>
+                            <li><a href="#">Disease</a></li>
+                            <li><a href="#">Hospitals</a></li>
+                        </ul>
                     </div>
-                    <div class="col-3 pt-4">
-                        <button class="button"><span>Want more Doctor ? </span></button>
+                </div>
+
+                <div class="col-lg-2 col-md-12 col">
+                    <div class="footer-widget">
+                        <h6>Links Group 3</h6>
+                        <ul>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Doctor</a></li>
+                            <li><a href="#">Disease</a></li>
+                            <li><a href="#">Hospitals</a></li>
+                        </ul>
                     </div>
-                    
-                </div>    
+                </div>
+
             </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer-copyright-text">
+                        <p>&copy; Copyright
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> | <a href="index.html"> E-Health Care </a> | All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </footer>
+    <!-- footer end -->
 
-
-
-    </div>
-    </div>
-    </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <Section>
-        <!-- footer start -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="footer-about">
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="./assets/images/logo-white.svg" alt=""></a>
-                            </div>
-                            <p>E-Health Care is a dream that turned into a tech based startup, a business with a great
-                                purpose to create positive impacts in peoples' lives.</p>
-
-                            <!-- Add Social Icon -->
-                            <div>
-                                <a href="example.com" target="_blank"><span class="social-icons"><i
-                                            class="fab fa-facebook" style="color:#30629d;"></i></span></a>
-                                <a href="example.com" target="_blank"><span class="social-icons"><i
-                                            class="fab fa-twitter" style="color:#00A7E6;"></i></span></a>
-                                <a href="example.com" target="_blank"><span class="social-icons"><i
-                                            class="fab fa-linkedin" style="color:#0073B1;"></i></span></a>
-                                <a href="example.com" target="_blank"><span class="social-icons"><i
-                                            class="fab fa-instagram" style="color:#D32C86;"></i></span></a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 offset-lg-1 col-md-3 col-6">
-                        <div class="footer-widget">
-                            <h6>Link Group</h6>
-                            <ul>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Doctor</a></li>
-                                <li><a href="#">Disease</a></li>
-                                <li><a href="#">Hospitals</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-3 col-6">
-                        <div class="footer-widget">
-                            <h6>Link Group 2</h6>
-                            <ul>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Doctor</a></li>
-                                <li><a href="#">Disease</a></li>
-                                <li><a href="#">Hospitals</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-12 col">
-                        <div class="footer-widget">
-                            <h6>Links Group 3</h6>
-                            <ul>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Doctor</a></li>
-                                <li><a href="#">Disease</a></li>
-                                <li><a href="#">Hospitals</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div class="footer-copyright-text">
-                            <p>&copy; Copyright <script>
-                                    document.write(new Date().getFullYear());
-                                </script> | <a href="index.html"> E-Health Care </a> | All Rights Reserved</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </footer>
-        <!-- footer end -->
-    </Section>
 
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+        </script>
     <!-- Main JS -->
     <!-- <script src="./assets/css/script.js"></script> -->
 </body>
