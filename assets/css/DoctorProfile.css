@@ -2,7 +2,7 @@ body {
 	background-color: #fff;
 	font-family: roboto, sans-serif;
 }
-section{
+section {
 	background: #f3f3f3;
 	padding: 20px 0px;
 }
@@ -234,7 +234,6 @@ section{
 	padding-top: 70px;
 }
 
-
 /*--------------------------------------------------------------
 # Footer Area
 --------------------------------------------------------------*/
@@ -362,7 +361,6 @@ a:focus {
 	box-shadow: 0px 3px 8px -2px #0076bc;
 	border-radius: 10px;
 }
-
 
 @media screen and (max-width: 600px) {
 	.card .doctorcard {

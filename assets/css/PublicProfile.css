@@ -1,5 +1,5 @@
 body {
-    /* #f0f2f5 */
+	/* #f0f2f5 */
 	background-color: #fff;
 	height: 100vh;
 	font-family: roboto, sans-serif;
@@ -130,17 +130,17 @@ section {
 	color: #fff;
 }
 .custom-shadow {
-    background-image: url("../images/bg2.gif");
-    
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url("../images/bg2.gif");
+
+	background-repeat: no-repeat;
+	background-size: cover;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	padding: 30px;
 }
 /* ............................. */
 /* login page */
 .login-first-parent {
-    justify-content: center;
+	justify-content: center;
 	background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.5)),
 		url("../images/login-hero.jpeg");
 	background-position: center;
@@ -149,111 +149,102 @@ section {
 	height: 80vh;
 }
 
-
-
-
-
-
 .card {
-    padding-top: 20px;
-    background-color: #EAF7E8;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .card-items { 
-    width: 250px;  
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .circle-1 {
-    border-radius: 50%;
-    width: 100%;
-    padding-bottom: 80%;  
-    position: absolute;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #26a69a transparent #26a69a #26a69a;
-    top: 0px;
-    transition: all 1.5s ease-in-out;
-  }
-  
-  .card:hover .circle-1 {
-    transform: rotate(360deg);
-  }
-  
-  .circle-2 {
-    border-radius: 50%; 
-    width: 95%;    
-    padding-bottom: 80%;  
-    position: absolute;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #26a69a #26a69a #26a69a transparent;
-    transition: all 1.5s ease-in-out;
-  }
-  
-  @media (min-width: 225px) {
-    .circle-2 {
-        top: 1.5%;
-    }
-  }
-  
-  .card:hover .circle-2 {  
-    transform: rotate(-360deg);
-  }
-  
-  .image {   
-    border-radius: 50%;
-      width: 90%;    
-      padding-bottom: 90%;
-      margin: 6%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;  
-  }
-  
-  @media (min-width: 225px) {
-    .image {
-        margin: 5%;
-    }
-  }
-  
-  .name {
-    color: #00796b;  
-    margin: 30px 0 0;
-    text-align: center;  
-  }
-  
-  .role {
-    color: #00796b;
-    text-align: center;  
-    margin: 5px 0;
-  }
-  
-  .card-contact {
-    text-decoration: none;
-    color: #00796b;
-    border: 2px solid #00796b;
-    border-radius: 20px;
-    margin: 15px 0 30px;
-    padding: 5px;
-    text-align: center;
-    transition: all 2s;
-  }
-  
-  .card-contact:hover {
-    color: #dc3545;  
-    /* background: linear-gradient(to bottom, #E4F6EA, #EFECF9);  */
-  }
+	padding-top: 20px;
+	background-color: #eaf7e8;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+}
 
+.card-items {
+	width: 250px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
+.circle-1 {
+	border-radius: 50%;
+	width: 100%;
+	padding-bottom: 80%;
+	position: absolute;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #26a69a transparent #26a69a #26a69a;
+	top: 0px;
+	transition: all 1.5s ease-in-out;
+}
 
+.card:hover .circle-1 {
+	transform: rotate(360deg);
+}
 
+.circle-2 {
+	border-radius: 50%;
+	width: 95%;
+	padding-bottom: 80%;
+	position: absolute;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #26a69a #26a69a #26a69a transparent;
+	transition: all 1.5s ease-in-out;
+}
+
+@media (min-width: 225px) {
+	.circle-2 {
+		top: 1.5%;
+	}
+}
+
+.card:hover .circle-2 {
+	transform: rotate(-360deg);
+}
+
+.image {
+	border-radius: 50%;
+	width: 90%;
+	padding-bottom: 90%;
+	margin: 6%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+@media (min-width: 225px) {
+	.image {
+		margin: 5%;
+	}
+}
+
+.name {
+	color: #00796b;
+	margin: 30px 0 0;
+	text-align: center;
+}
+
+.role {
+	color: #00796b;
+	text-align: center;
+	margin: 5px 0;
+}
+
+.card-contact {
+	text-decoration: none;
+	color: #00796b;
+	border: 2px solid #00796b;
+	border-radius: 20px;
+	margin: 15px 0 30px;
+	padding: 5px;
+	text-align: center;
+	transition: all 2s;
+}
+
+.card-contact:hover {
+	color: #dc3545;
+	/* background: linear-gradient(to bottom, #E4F6EA, #EFECF9);  */
+}
 
 /*--------------------------------------------------------------
 # Footer Area
@@ -382,17 +373,6 @@ a:focus {
 	box-shadow: 0px 3px 8px -2px #0076bc;
 	border-radius: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
