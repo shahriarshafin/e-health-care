@@ -1,10 +1,14 @@
-# [E-Health Care](https://ehealthcare.netlify.app/)
+<p align="center">
+<a href="https://ehealthcare.netlify.app/">
+<img src="./assets/images/logo.svg" alt="Logo" width="300">
+</a>
+</p>
 
 ## About this project
 
 [E-Health Care](https://ehealthcare.netlify.app/) is a web application where users can check their heart condition through this system. If the user's inserted symptoms match the symptoms of a disease, it will advise the associate physician for that disease.
 
-[![youtube](./assets/images/screenshot.png)](https://youtu.be/250wrQvzD6Y)
+[![youtube](./assets/images/screenshot.png)](https://youtu.be/oq1v-Nef3pM)
 
 ## Features:
 
